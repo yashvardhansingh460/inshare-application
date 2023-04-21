@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "yash": "nodemon server.js",
+    "dev": "nodemon server.js",
     "serve": "node server.js"
   },
   "dependencies": {
