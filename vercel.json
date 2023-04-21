@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "file-sharing-app",
+  "name": "file-sharing",
   "builds": [
     {
       "src": "./server.js",
