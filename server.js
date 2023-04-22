@@ -13,7 +13,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 connectDB();
 //cors
-
+//updated cors
 const corsOptions = {
     // origin: process.env.ALLOWED_CLIENTS.split(','),
     origin:'*',
