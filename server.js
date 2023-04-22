@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const cors = require('cors');
+
 
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 // app.use(express.static(__dirname));
 app.use(express.json());
+const cors = require('cors');
 
 
 const connectDB = require('./config/db');
@@ -14,11 +15,13 @@ connectDB();
 //cors
 
 const corsOptions ={
-    origin: process.env.ALLOWED_CLIENTS.split(',')
-    // origin:'*',
-    // credentials:true,            
+    // origin: process.env.ALLOWED_CLIENTS.split(','),
+    origin:'*',
+    credentials:true,            
     // access-control-allow-credentials:true
-    // optionSuccessStatus:200,
+    // Acces-Control-Allow-Origin = true
+    // acces-control
+    optionSuccessStatus:200,
  }
  //console.log("hello");
 
