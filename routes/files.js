@@ -24,7 +24,7 @@ router.post('/',(req,res)=>{
 
    //store a file in upload folder
   upload(req,res, async (err)=> {
-
+   
     if(!req.file){
         return res.json({error : 'there is something error in request..'});
      }
