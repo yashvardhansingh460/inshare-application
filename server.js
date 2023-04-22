@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
+// const cors = require('cors');
 
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
@@ -18,10 +18,9 @@ const corsOptions ={
     // origin: process.env.ALLOWED_CLIENTS.split(','),
     origin:'*',
     credentials:true,            
-    // access-control-allow-credentials:true
-    // Acces-Control-Allow-Origin = true
-    // acces-control
-    //acces allowed: true,
+    // //access-control-allow-credentials:true
+    // //Acces-Control-Allow-Origin = true
+    // //acces-control
     optionSuccessStatus:200,
  }
  //console.log("hello");
