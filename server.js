@@ -12,9 +12,11 @@ const connectDB = require('./config/db');
 connectDB();
 //cors
 const corsOptions ={
-    origin:'*',
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200,
+    origin: process.env.ALLOWED_CLIENTS.split(',')
+    // origin:'*',
+    // credentials:true,            
+    // access-control-allow-credentials:true
+    // optionSuccessStatus:200,
  }
 app.use(cors(corsOptions));
 
