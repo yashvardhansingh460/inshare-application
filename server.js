@@ -14,7 +14,7 @@ const connectDB = require('./config/db');
 connectDB();
 //cors
 
-const corsOptions ={
+const corsOptions = {
     // origin: process.env.ALLOWED_CLIENTS.split(','),
     origin:'*',
     credentials:true,            
