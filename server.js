@@ -18,6 +18,7 @@ const corsOptions ={
     // access-control-allow-credentials:true
     // optionSuccessStatus:200,
  }
+ //console.log("hello");
 app.use(cors(corsOptions));
 
 app.set('views',path.join(__dirname, '/views'));
