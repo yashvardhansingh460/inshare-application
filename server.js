@@ -21,6 +21,7 @@ const corsOptions ={
     // access-control-allow-credentials:true
     // Acces-Control-Allow-Origin = true
     // acces-control
+    //acces allowed: true,
     optionSuccessStatus:200,
  }
  //console.log("hello");
